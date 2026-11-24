@@ -1,0 +1,143 @@
+:root {
+  --bg-slate: #0b111e;
+  --surface-card: #131c2e;
+  --surface-deep: #070b14;
+  --border-steel: #24324d;
+  --text-main: #f1f5f9;
+  --text-muted: #94a3b8;
+  --teal: #14b8a6;
+  --teal-hover: #2dd4bf;
+  --amber: #f59e0b;
+  --rose: #f43f5e;
+  --indigo: #818cf8;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background-color: var(--bg-slate);
+  color: var(--text-main);
+  line-height: 1.5;
+}
+
+.topbar {
+  background: var(--surface-deep);
+  border-bottom: 2px solid var(--teal);
+  padding: 1rem 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.brand {
+  font-weight: 800;
+  font-size: 1.05rem;
+  letter-spacing: 0.05em;
+}
+
+.brand span {
+  color: var(--teal);
+}
+
+.nav-pills {
+  display: flex;
+  gap: 0.45rem;
+  background: var(--surface-card);
+  padding: 0.3rem;
+  border-radius: 8px;
+  border: 1px solid var(--border-steel);
+}
+
+.nav-pills a {
+  color: var(--text-muted);
+  text-decoration: none;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 0.4rem 0.85rem;
+  border-radius: 6px;
+}
+
+.nav-pills a.active {
+  background: var(--teal);
+  color: #042f2e;
+}
+
+.container {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 1.75rem 2rem 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.kpi-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.card {
+  background: var(--surface-card);
+  border: 1px solid var(--border-steel);
+  border-radius: 12px;
+  padding: 1.25rem;
+}
+
+.kpi-label {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: var(--text-muted);
+}
+
+.kpi-value {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 1.7rem;
+  font-weight: 800;
+  margin-top: 0.25rem;
+}
+
+.teal { color: var(--teal); }
+.amber { color: var(--amber); }
+.rose { color: var(--rose); }
+.indigo { color: var(--indigo); }
+
+.btn-teal {
+  background: var(--teal);
+  color: #042f2e;
+  border: none;
+  padding: 0.6rem 1.05rem;
+  border-radius: 7px;
+  font-weight: 700;
+  font-size: 0.84rem;
+  cursor: pointer;
+}
+
+.btn-teal:hover {
+  background: var(--teal-hover);
+}
+
+.btn-outline {
+  background: var(--surface-deep);
+  color: var(--text-main);
+  border: 1px solid var(--border-steel);
+  padding: 0.42rem 0.8rem;
+  border-radius: 6px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn-outline:hover {
+  border-color: var(--teal);
+  color: var(--teal);
+}
